@@ -1,11 +1,15 @@
 package com.mpp;
 
 public class Course {
-	String number;
-	String titla;
-	int unit;
+	private String number;
+	private String title;
+	private int unit;
 	
-	
+	public Course(String number, String title, int unit) {
+		this.number = number;
+		this.title = title;
+		this.unit = unit;
+	}
 	
 	public String getNumber() {
 		return number;
@@ -13,11 +17,11 @@ public class Course {
 	public void setNumber(String number) {
 		this.number = number;
 	}
-	public String getTitla() {
-		return titla;
+	public String getTitle() {
+		return title;
 	}
-	public void setTitla(String titla) {
-		this.titla = titla;
+	public void setTitle(String title) {
+		this.title = title;
 	}
 	public int getUnit() {
 		return unit;

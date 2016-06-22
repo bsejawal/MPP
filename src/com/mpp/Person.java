@@ -2,15 +2,14 @@ package com.mpp;
 
 public class Person {
 	
-	String name;
-	String phone;
-	int age;
+	private String name;
+	private String phone;
+	private int age;
 	
 	
 	
 	
 	public Person(String name, String phone, int age) {
-//		super();
 		this.name = name;
 		this.phone = phone;
 		this.age = age;
@@ -32,6 +31,10 @@ public class Person {
 	}
 	public void setAge(int age) {
 		this.age = age;
+	}
+	
+	public double getSalary(){
+		return 0;
 	}
 	
 	
