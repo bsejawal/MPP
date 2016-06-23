@@ -6,9 +6,6 @@ public class Person {
 	private String phone;
 	private int age;
 	
-	
-	
-	
 	public Person(String name, String phone, int age) {
 		this.name = name;
 		this.phone = phone;

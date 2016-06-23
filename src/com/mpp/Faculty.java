@@ -29,7 +29,6 @@ public class Faculty extends Person {
 			units += course.getUnit();
 		}
 		return units;
-
 	}
 
 	public void addCourse(Course course) {
