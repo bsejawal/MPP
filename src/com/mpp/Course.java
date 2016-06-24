@@ -3,7 +3,7 @@ package com.mpp;
 public class Course {
 	private String number;
 	private String title;
-	private int unit;
+	private int unit;	
 	
 	public Course(String number, String title, int unit) {
 		this.number = number;

@@ -96,7 +96,7 @@ public class Department {
 			Person p = it.next();
 			if(getType(p).equalsIgnoreCase("Student")){
 				Student s = (Student) p;
-				output += s.getName() +" : " + s.getTotalUnits();
+				output += s.getName() +" : " + s.getTotalUnits() +"\n";
 			}
 		}
 		return output;
