@@ -7,7 +7,7 @@ public abstract class Employee {
 		return new PayCheck(grossPay, fica, state, medicare, socialSecurity, payPeriad);
 	}*/
 	
-	
+	public abstract double calcGrossPay();
 	
 	public String print(){
 		String output = "";
