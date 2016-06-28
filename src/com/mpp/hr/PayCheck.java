@@ -26,6 +26,11 @@ public class PayCheck {
 		return 0.0;
 
 	}
+	
+	public double getActualPay(){
+		return 0.0;
+		
+	}
 
 	public String print() {
 		String output = "";
