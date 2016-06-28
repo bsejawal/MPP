@@ -3,6 +3,7 @@ package com.mpp.hr;
 public class PayCheck {
 	private static final double FICA = 25;
 	private static final double STATE = 5;
+	private static final double LOCAL = 1;
 	private static final double MEDICARE = 3;
 	private static final double SOCIALSECURITY = 7.5;
 
@@ -23,13 +24,12 @@ public class PayCheck {
 	}
 
 	public double getNetPay() {
-		return 0.0;
-
-	}
-	
-	public double getActualPay(){
-		return 0.0;
-		
+		double fica = grossPay * FICA / 100;
+		double state = grossPay * STATE / 100;
+		double local = grossPay * LOCAL / 100;
+		double medicare = grossPay * MEDICARE / 100;
+		double socialSecurity = grossPay * SOCIALSECURITY / 100;
+		return grossPay - fica - local - state - medicare - socialSecurity;
 	}
 
 	public String print() {
