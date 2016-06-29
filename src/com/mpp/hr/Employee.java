@@ -1,9 +1,7 @@
 package com.mpp.hr;
 
 public abstract class Employee {
-	private int employeeID;
-	
-	
+	private int employeeID;	
 
 	public Employee(int employeeID) {
 		this.employeeID = employeeID;
@@ -18,8 +16,8 @@ public abstract class Employee {
 
 		// return new PayCheck(grossPay, fica, state, medicare, socialSecurity,
 		// payPeriad);
+		calcGrossPay();
 		return 0;
-
 	}
 
 	public abstract double calcGrossPay();

@@ -4,8 +4,6 @@ public class HourlyEmployee extends Employee {
 
 	private double hourlyWages;
 	private int hoursPerWeek;
-	
-	
 
 	public HourlyEmployee(int employeeID,  double hourlyWages, int hoursPerWeek) {
 		super(employeeID);
@@ -34,5 +32,4 @@ public class HourlyEmployee extends Employee {
 	public void setHoursPerWeek(int hoursPerWeek) {
 		this.hoursPerWeek = hoursPerWeek;
 	}
-
 }

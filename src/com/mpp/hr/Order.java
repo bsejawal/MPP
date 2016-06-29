@@ -1,13 +1,13 @@
 package com.mpp.hr;
 
-import java.util.Date;
+import java.util.GregorianCalendar;
 
 public class Order {
 	private int orderNo;
-	private Date orderDate;
+	private GregorianCalendar orderDate;
 	private double orderAmount;
 
-	public Order(int orderNo, Date orderDate, double orderAmount) {
+	public Order(int orderNo, GregorianCalendar orderDate, double orderAmount) {
 		this.orderNo = orderNo;
 		this.orderDate = orderDate;
 		this.orderAmount = orderAmount;
@@ -21,11 +21,11 @@ public class Order {
 		this.orderNo = orderNo;
 	}
 
-	public Date getOrderDate() {
+	public GregorianCalendar getOrderDate() {
 		return orderDate;
 	}
 
-	public void setOrderDate(Date orderDate) {
+	public void setOrderDate(GregorianCalendar orderDate) {
 		this.orderDate = orderDate;
 	}
 
