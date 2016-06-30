@@ -1,19 +1,10 @@
 package com.mpp.hr;
 
-import java.util.GregorianCalendar;
-
 public class TestHr {
 	public static void main(String[] args) {
+		// DateRange dr = new DateRange(new Date(), new Date());
+		// System.out.println("output \n");
 		System.out.println(DateRange.getLastDayOfMonth("1/01/2016"));
-		Hr hr = new Hr();
-		HourlyEmployee he1 = new HourlyEmployee(1235, 12, 41);
-		hr.addEmployee(he1);
-		
-//		ce1.addOrder(new Order(1, new GregorianCalendar(2016, 5, 22), 125.23));
 	}
-	
-	
-	
-	
 
 }
