@@ -5,32 +5,23 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 
 public class DateRange {
 
 	private static final SimpleDateFormat format = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
 
-	private Date startDate;
-	private Date endDate;
+	private GregorianCalendar startDate;
+	private GregorianCalendar endDate;
 
 	private long diff;
 
-	public DateRange(Date startDate, Date endData) {
+	public DateRange(GregorianCalendar startDate, GregorianCalendar endData) {
 		this.startDate = startDate;
 		this.endDate = endData;
-		this.setDiff(this.endDate.getTime() - this.startDate.getTime());
+//		this.setDiff(this.endDate.getTime() - this.startDate.getTime());
 	}
-
-	public DateRange(String startDate, String endData) {
-		try {
-			this.startDate = format.parse(startDate);
-			this.endDate = format.parse(endData);
-			setDiff(this.endDate.getTime() - this.startDate.getTime());
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-
+	
 	public boolean isInRange() {
 
 		return false;

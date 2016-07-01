@@ -4,10 +4,8 @@ public class HourlyEmployee extends Employee {
 
 	private double hourlyWages;
 	private int hoursPerWeek;
-	
-	
 
-	public HourlyEmployee(int employeeID,  double hourlyWages, int hoursPerWeek) {
+	public HourlyEmployee(int employeeID, double hourlyWages, int hoursPerWeek) {
 		super(employeeID);
 		this.hourlyWages = hourlyWages;
 		this.hoursPerWeek = hoursPerWeek;
@@ -15,8 +13,7 @@ public class HourlyEmployee extends Employee {
 
 	@Override
 	public double calcGrossPay() {
-		// TODO Auto-generated method stub
-		return 0;
+		return 4 * hoursPerWeek * hourlyWages; 
 	}
 
 	public double getHourlyWages() {
