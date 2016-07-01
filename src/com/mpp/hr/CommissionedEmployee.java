@@ -39,8 +39,7 @@ public class CommissionedEmployee extends Employee {
 
 	@Override
 	public double calcGrossPay() {
-		// TODO Auto-generated method stub
-		return 0;
+		return baseSalary +  getCommission();
 	}
 
 }

@@ -75,10 +75,17 @@ public class PayCheck {
 	public void setPayPeriad(DateRange payPeriad) {
 		this.payPeriad = payPeriad;
 	}
-
+public double getNetPay(){
+	return grossPay - fica - state - local - medicare - socialSecurity;
+}
 	public String print() {
-		String output = "";
-		return output;
+		return "Gross Pay :"+grossPay+", "
+				+ "Fica : "+fica +", "
+				+ "State : "+ state +", "
+				+ "Local : "+local +", "
+				+ "Medicare : "+ medicare +", "
+				+ "Social Security :"+ socialSecurity +", "
+				+ "Net Pay : " +getNetPay();
 	}
 
 }

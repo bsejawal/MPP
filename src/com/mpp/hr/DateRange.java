@@ -9,7 +9,7 @@ import java.util.GregorianCalendar;
 
 public class DateRange {
 
-	private static final SimpleDateFormat format = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
+//	private static final SimpleDateFormat format = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
 
 	private GregorianCalendar startDate;
 	private GregorianCalendar endDate;

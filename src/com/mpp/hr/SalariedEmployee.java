@@ -2,8 +2,6 @@ package com.mpp.hr;
 
 public class SalariedEmployee extends Employee {
 	private double salary;
-	
-	
 
 	public SalariedEmployee(int employeeID, double salary) {
 		super(employeeID);
@@ -20,8 +18,7 @@ public class SalariedEmployee extends Employee {
 
 	@Override
 	public double calcGrossPay() {
-		// TODO Auto-generated method stub
-		return 0;
+		return salary;
 	}
 
 }

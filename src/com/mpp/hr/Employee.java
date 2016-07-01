@@ -9,12 +9,11 @@ public abstract class Employee {
 		this.employeeID = employeeID;
 	}
 
-	public int calcCompensation(int year, int month) {
+	public PayCheck calcCompensation(int year, int month) {
 		double grossPay = calcGrossPay();
 		
-		PayCheck payCheck = new PayCheck(grossPay, getFica(grossPay), getState(grossPay), getLocal(grossPay), getMedicare(grossPay), getSocialSecurity(grossPay), new DateRange(new GregorianCalendar(2016, 6, 2), new GregorianCalendar(2016, 7,23)));
+		return new PayCheck(grossPay, getFica(grossPay), getState(grossPay), getLocal(grossPay), getMedicare(grossPay), getSocialSecurity(grossPay), new DateRange(new GregorianCalendar(2016, 6, 2), new GregorianCalendar(2016, 7,23)));
 		
-		return 0;
 	}
 
 	public abstract double calcGrossPay();
